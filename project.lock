@@ -1,0 +1,61 @@
+preprocess:
+  cmd: python -m spacy run preprocess
+  script:
+    - mkdir -p corpus/UD_German-HDT
+    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-train-a-1.conllu corpus/UD_German-HDT/
+      --n-sents 10
+    - mv corpus/UD_German-HDT/de_hdt-ud-train-a-1.spacy corpus/UD_German-HDT/train.spacy
+    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-dev.conllu corpus/UD_German-HDT/
+      --n-sents 10
+    - mv corpus/UD_German-HDT/de_hdt-ud-dev.spacy corpus/UD_German-HDT/dev.spacy
+    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-test.conllu corpus/UD_German-HDT/
+      --n-sents 10
+    - mv corpus/UD_German-HDT/de_hdt-ud-test.spacy corpus/UD_German-HDT/test.spacy
+  deps:
+    - path: assets/UD_German-HDT/
+      md5: 4a5f806d9ed5840cbf988250c7b1c733
+  outs:
+    - path: corpus/UD_German-HDT/train.spacy
+      md5: fe7e6f87371049c766e4679e55c8e456
+    - path: corpus/UD_German-HDT/dev.spacy
+      md5: 466925b30f8e1d4fc747d73738533955
+    - path: corpus/UD_German-HDT/test.spacy
+      md5: d26bff92c8ff9d250319c3eb2392114f
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
+create-config:
+  cmd: python -m spacy run create-config
+  script:
+    - python -m spacy init config -l de -p experimental_edit_tree_lemmatizer configs/UD_German-HDT/config.cfg
+      -F
+  deps: []
+  outs: []
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
+train:
+  cmd: python -m spacy run train
+  script:
+    - python -m spacy train configs/UD_German-HDT/config.cfg --output training/UD_German-HDT
+      --gpu-id -1 --paths.train corpus/UD_German-HDT/train.spacy --paths.dev corpus/UD_German-HDT/dev.spacy
+  deps:
+    - path: configs/UD_German-HDT/config.cfg
+      md5: 019b19667945597e05ce9df48163f61e
+    - path: corpus/UD_German-HDT/train.spacy
+      md5: fe7e6f87371049c766e4679e55c8e456
+    - path: corpus/UD_German-HDT/dev.spacy
+      md5: 466925b30f8e1d4fc747d73738533955
+  outs:
+    - path: training/UD_German-HDT/model-best
+      md5: a897d9401ddf2b3e2e56b2977e615b77
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
+evaluate:
+  cmd: python -m spacy run evaluate
+  script:
+    - python -m spacy evaluate training/UD_German-HDT/model-best corpus/UD_German-HDT/test.spacy
+  deps:
+    - path: training/UD_German-HDT/model-best
+      md5: a897d9401ddf2b3e2e56b2977e615b77
+  outs: []
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
