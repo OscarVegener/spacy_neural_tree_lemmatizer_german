@@ -13,7 +13,7 @@ preprocess:
     - mv corpus/UD_German-HDT/de_hdt-ud-test.spacy corpus/UD_German-HDT/test.spacy
   deps:
     - path: assets/UD_German-HDT/
-      md5: 4a5f806d9ed5840cbf988250c7b1c733
+      md5: e28e4ff412ba30e3169d7c045a9b89e7
   outs:
     - path: corpus/UD_German-HDT/train.spacy
       md5: fe7e6f87371049c766e4679e55c8e456
