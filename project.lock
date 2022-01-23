@@ -2,9 +2,9 @@ preprocess:
   cmd: python -m spacy run preprocess
   script:
     - mkdir -p corpus/UD_German-HDT
-    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-train-a-1.conllu corpus/UD_German-HDT/
+    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-train-merged.conllu corpus/UD_German-HDT/
       --n-sents 10
-    - mv corpus/UD_German-HDT/de_hdt-ud-train-a-1.spacy corpus/UD_German-HDT/train.spacy
+    - mv corpus/UD_German-HDT/de_hdt-ud-train-merged.spacy corpus/UD_German-HDT/train.spacy
     - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-dev.conllu corpus/UD_German-HDT/
       --n-sents 10
     - mv corpus/UD_German-HDT/de_hdt-ud-dev.spacy corpus/UD_German-HDT/dev.spacy
@@ -13,10 +13,10 @@ preprocess:
     - mv corpus/UD_German-HDT/de_hdt-ud-test.spacy corpus/UD_German-HDT/test.spacy
   deps:
     - path: assets/UD_German-HDT/
-      md5: e28e4ff412ba30e3169d7c045a9b89e7
+      md5: 75a29902ffbfcdb6b0f1b952ea9ef1be
   outs:
     - path: corpus/UD_German-HDT/train.spacy
-      md5: fe7e6f87371049c766e4679e55c8e456
+      md5: 02d20622015f1c403f878db351677df1
     - path: corpus/UD_German-HDT/dev.spacy
       md5: 466925b30f8e1d4fc747d73738533955
     - path: corpus/UD_German-HDT/test.spacy

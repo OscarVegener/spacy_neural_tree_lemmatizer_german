@@ -3,7 +3,7 @@ title: "Edit tree lemmatizer"
 vars:
   lang: "de"
   treebank: "UD_German-HDT"
-  train_name: "de_hdt-ud-train-a-1"
+  train_name: "de_hdt-ud-train-merged"
   dev_name: "de_hdt-ud-dev"
   test_name: "de_hdt-ud-test"
   gpu: -1
