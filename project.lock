@@ -1,25 +1,25 @@
 preprocess:
   cmd: python -m spacy run preprocess
   script:
-    - mkdir -p corpus/UD_German-HDT
-    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-train-merged.conllu corpus/UD_German-HDT/
+    - mkdir -p corpus/UD_German-HDT_merged
+    - python -m spacy convert assets/UD_German-HDT_merged/de_hdt-ud-train-merged.conllu
+      corpus/UD_German-HDT_merged/ --n-sents 10
+    - mv corpus/UD_German-HDT_merged/de_hdt-ud-train-merged.spacy corpus/UD_German-HDT_merged/train.spacy
+    - python -m spacy convert assets/UD_German-HDT_merged/de_hdt-ud-dev.conllu corpus/UD_German-HDT_merged/
       --n-sents 10
-    - mv corpus/UD_German-HDT/de_hdt-ud-train-merged.spacy corpus/UD_German-HDT/train.spacy
-    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-dev.conllu corpus/UD_German-HDT/
+    - mv corpus/UD_German-HDT_merged/de_hdt-ud-dev.spacy corpus/UD_German-HDT_merged/dev.spacy
+    - python -m spacy convert assets/UD_German-HDT_merged/de_hdt-ud-test.conllu corpus/UD_German-HDT_merged/
       --n-sents 10
-    - mv corpus/UD_German-HDT/de_hdt-ud-dev.spacy corpus/UD_German-HDT/dev.spacy
-    - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-test.conllu corpus/UD_German-HDT/
-      --n-sents 10
-    - mv corpus/UD_German-HDT/de_hdt-ud-test.spacy corpus/UD_German-HDT/test.spacy
+    - mv corpus/UD_German-HDT_merged/de_hdt-ud-test.spacy corpus/UD_German-HDT_merged/test.spacy
   deps:
-    - path: assets/UD_German-HDT/
+    - path: assets/UD_German-HDT_merged/
       md5: 75a29902ffbfcdb6b0f1b952ea9ef1be
   outs:
-    - path: corpus/UD_German-HDT/train.spacy
+    - path: corpus/UD_German-HDT_merged/train.spacy
       md5: 02d20622015f1c403f878db351677df1
-    - path: corpus/UD_German-HDT/dev.spacy
+    - path: corpus/UD_German-HDT_merged/dev.spacy
       md5: 466925b30f8e1d4fc747d73738533955
-    - path: corpus/UD_German-HDT/test.spacy
+    - path: corpus/UD_German-HDT_merged/test.spacy
       md5: d26bff92c8ff9d250319c3eb2392114f
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
@@ -39,14 +39,14 @@ train:
       --gpu-id -1 --paths.train corpus/UD_German-HDT/train.spacy --paths.dev corpus/UD_German-HDT/dev.spacy
   deps:
     - path: configs/UD_German-HDT/config.cfg
-      md5: a5b9fd859ecd939f05e8de001fd836eb
+      md5: 0641982b5be1718258fd30a35e0a2f5a
     - path: corpus/UD_German-HDT/train.spacy
-      md5: 02d20622015f1c403f878db351677df1
+      md5: fe7e6f87371049c766e4679e55c8e456
     - path: corpus/UD_German-HDT/dev.spacy
       md5: 466925b30f8e1d4fc747d73738533955
   outs:
     - path: training/UD_German-HDT/model-best
-      md5: 3990a7afd9670e253d1129278cfac6db
+      md5: a81d7bd3e24c86ce1f537204eb64f5c5
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
 evaluate:
