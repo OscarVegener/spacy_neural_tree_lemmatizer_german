@@ -39,14 +39,14 @@ train:
       --gpu-id -1 --paths.train corpus/UD_German-HDT/train.spacy --paths.dev corpus/UD_German-HDT/dev.spacy
   deps:
     - path: configs/UD_German-HDT/config.cfg
-      md5: f45272ecd613b07a8fdebb469029ce67
+      md5: a5b9fd859ecd939f05e8de001fd836eb
     - path: corpus/UD_German-HDT/train.spacy
-      md5: fe7e6f87371049c766e4679e55c8e456
+      md5: 02d20622015f1c403f878db351677df1
     - path: corpus/UD_German-HDT/dev.spacy
       md5: 466925b30f8e1d4fc747d73738533955
   outs:
     - path: training/UD_German-HDT/model-best
-      md5: 247ddfe80343525234998c7cdb1aef25
+      md5: 3990a7afd9670e253d1129278cfac6db
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
 evaluate:
@@ -55,7 +55,7 @@ evaluate:
     - python -m spacy evaluate training/UD_German-HDT/model-best corpus/UD_German-HDT/test.spacy
   deps:
     - path: training/UD_German-HDT/model-best
-      md5: 247ddfe80343525234998c7cdb1aef25
+      md5: 3990a7afd9670e253d1129278cfac6db
   outs: []
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
