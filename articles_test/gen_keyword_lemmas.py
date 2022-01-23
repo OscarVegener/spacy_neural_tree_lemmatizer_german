@@ -1,6 +1,6 @@
 import spacy
 
-nlp = spacy.load('../training/UD_German-HDT/model-best')
+nlp = spacy.load('../training/UD_German-HDT/model-last')
 
 file = open('keywords.txt', 'r')
 text = file.read()
