@@ -1,7 +1,7 @@
 Joop
 Brillen
 -
-Designerbrille
+Designerbrillen
 für
 Dame
 und
@@ -43,7 +43,7 @@ erwerben
 ein
 Produkt
 mit
-höchster
+NULL
 Material-
 und
 Verarbeitungsqualität
@@ -61,7 +61,7 @@ Sortiment
 finden
 Sie
 eine
-große
+groß
 Auswahl
 an
 Joop
@@ -71,7 +71,7 @@ Dame
 und
 Herr
 in
-verscheiden
+verschieden
 Farbe
 und
 Form
@@ -82,7 +82,7 @@ erhältlich
 
 
 
-Designerbrille
+Designerbrill
 von
 Joop
 
@@ -95,7 +95,7 @@ Joop
 Brillen
 sein
 exklusiv
-Brille
+Brillen
 für
 modebewusste
 Mensch
@@ -104,7 +104,7 @@ die
 Wert
 auf
 ein
-stilvolles
+stilvoll
 Auftreten
 legen
 .
@@ -115,11 +115,11 @@ ein
 Modell
 der
 weltbekannten
-Designerbrille
+designerbrill
 entscheiden
 ,
-bekommt�
-�
+bekommen
+…
 ...
 
 
@@ -140,7 +140,7 @@ Joop
 zu
 deren
 stilvoll
-Portfolio
+Design-Portfolio
 auch
 Modeartikel
 wie
@@ -263,7 +263,7 @@ Sie
 sich
 von
 unser
-großen
+groß
 Auswahl
 an
 stilvoll
@@ -284,10 +284,10 @@ die
 weltbekannt
 ,
 exklusiv
-Designmarke
+Designmark
 Eleganz
 und
-Exklusivität
+unknown
 groß
 und
 sein
@@ -337,7 +337,7 @@ Gesichtsform
 .
 Selbst
 der
-große
+groß
 Meister
 Wolfgang
 Joop
@@ -361,7 +361,7 @@ Gold
 Sie
 lieben
 das
-Besondere
+Besonder
 und
 leben
 einen
@@ -413,13 +413,13 @@ in
 Gold
 heben
 die
-Exklusivität
+unknown
 der
 Brillenfassung
 hervor
 und
 verleihen
-Ihrem
+sein
 Gesicht
 eine
 ganz
@@ -462,11 +462,11 @@ Herr
 haben
 wir
 eine
-große
+groß
 Auswahl
 an
-männlichen
-Brillenmodellen
+männlich
+Brillenmodell
 in
 unser
 reichhaltig
@@ -512,12 +512,12 @@ Auch
 hier
 warten
 eine
-große
+groß
 Auswahl
 divers
 Design
 in
-verscheiden
+verschieden
 Farbe
 und
 Form
@@ -527,7 +527,7 @@ Kunde
 .
 Brillenfassungen
 in
-dezenen
+dezent
 Farbe
 wie
 schwarz
@@ -540,7 +540,7 @@ beige
 erfreuen
 sich
 einer
-großen
+groß
 Nachfrage
 .
 Bei
@@ -550,21 +550,21 @@ haben
 wir
 sowohl
 die
-quadratische
+quadratisch
 als
 auch
 die
 klassisch
-rund
+run
 Form
 im
 Angebot
 und
 es
-k�nnen
+können
 aus
 einem
-großen
+groß
 Angebot
 die
 zu
@@ -573,7 +573,7 @@ Gesichtsform
 perfekt
 passen
 Brillenform
-ausgewählt
+auswählen
 werden
 .
 
@@ -593,7 +593,7 @@ und
 neben
 Modell
 in
-dezenen
+dezent
 Farbe
 ,
 wie
@@ -641,19 +641,19 @@ perfekt
 Begleiter
 für
 ein
-elegantes
+elegant
 und
-luxuriöses
+luxuriös
 Aussehen
 .
 Mit
 einem
-filigran
+filigranen
 Metallgestell
 erhalten
 sie
 einen
-dezenen
+dezenten
 ,
 aber
 exklusiv
@@ -681,11 +681,11 @@ lieben
 ein
 fein
 ,
-sanft
+sanfen
 Design
 und
-mögen
-Exklusivität
+mög
+unknown
 ?
 Dann
 sein
@@ -693,7 +693,7 @@ unser
 Joop
 Brille
 in
-Rosa
+rosa
 sicherlich
 ganz
 nach
@@ -760,7 +760,7 @@ in
 Schwarz
 Gold
 .
-Klassisch
+klassisch
 schwarz
 und
 exklusiv
@@ -777,7 +777,7 @@ die
 es
 lieben
 ,
-eleganen
+elegant
 und
 modisch
 durchs
@@ -808,7 +808,7 @@ passen
 Modell
 für
 sein
-perfektes
+perfekt
 Aussehen
 zu
 finden
@@ -825,7 +825,7 @@ Shop
 haben
 sie
 eine
-große
+groß
 Auswahl
 und
 können
@@ -856,7 +856,7 @@ Herr
 ,
 assoziieren
 man
-verscheiden
+verschieden
 Aspekt
 :
 hochwertig
@@ -890,7 +890,7 @@ Qualitätsprozess
 Denn
 nur
 so
-k�nnen
+können
 die
 einwandfrei
 Qualität
@@ -900,9 +900,9 @@ Brillenfassungen
 garantieren
 werden
 und
-dies
+diese
 sein
-Ansprüchen
+Anspruch
 gerecht
 werden
 .
@@ -922,7 +922,7 @@ Katalog
 Lernen
 Sie
 unser
-großes
+groß
 Sortiment
 an
 Joop
@@ -936,7 +936,7 @@ Modell
 ,
 verfügbar
 in
-verscheiden
+verschieden
 Farbe
 und
 Form
@@ -945,7 +945,7 @@ sie
 und
 ihn
 .
-besuchen
+Besuchen
 Sie
 unser
 Online
@@ -987,7 +987,7 @@ unser
 erfahren
 Verkäuferinnen
 und
-Verkäufern
+Verkäufer
 umfangreich
 beraten
 lassen
@@ -1010,7 +1010,7 @@ Brillenkollektion
 der
 Tochter
 des
-berühmten
+berühmt
 Modedesigners
 Wolfgang
 Joop
@@ -1027,7 +1027,7 @@ dem
 neben
 Kleidung
 ,
-Schuhe
+Schuh
 ,
 Tasche
 und
@@ -1037,8 +1037,8 @@ eine
 ansprechen
 Kollektion
 an
-Damenbrillen
-gehört
+Damenbrill
+gehören
 .
 
 
@@ -1067,7 +1067,7 @@ Jahr
 1944
 in
 Potsdam
-geb�ren
+gebären
 ,
 ziehen
 Wolfgang
@@ -1123,7 +1123,7 @@ designt
 verkaufen
 er
 einen
-großen
+groß
 Anteil
 sein
 Firmenanteile
@@ -1140,7 +1140,7 @@ Geschäft
 der
 Marke
 Joop
-zurückzog
+zurückziehen
 .
 
 
@@ -1154,20 +1154,20 @@ zeitlos
 Eleganz
 und
 einen
-urban
+urbanen
 Lifestyle
 .
 sein
 Nutzer
 sein
-stilbewus
+stilbewusst
 Mensch
 ,
 die
 die
 Hochwertigkeit
 und
-Exklusivität
+unknown
 der
 Designerprodukte
 besonders
@@ -1180,21 +1180,21 @@ Brillen
 ,
 als
 exklusiv
-Designerbrille
+Designerbrillen
 zeichnen
 sich
 für
 sein
 Eleganz
 und
-sein
+ihr
 hochwertig
 Material
 ,
 welches
 unter
-höchsten
-Qualitätsstandards
+NULL
+Standard
 verarbeiten
 werden
 ,
@@ -1222,8 +1222,8 @@ Zeitlosigkeit
 Platz
 für
 individuell
-Stylingmöglichkeiten
-lässt
+Stylingmöglichkeit
+lassen
 .
 Die
 Marke
@@ -1255,10 +1255,10 @@ Brillen
 verfügen
 über
 eine
-große
+groß
 Auswahl
 an
-elegant
+eleganten
 und
 exklusiv
 Joop
@@ -1306,7 +1306,7 @@ unknown
 
 Welche
 Brille
-trägt
+tragen
 Wolfgang
 Joop
 ?
@@ -1316,7 +1316,7 @@ Joop
 In
 den
 meist
-Moment
+Momenten
 erscheinen
 Wolfgang
 Joop
@@ -1325,7 +1325,7 @@ der
 Öffentlichkeit
 mit
 einer
-run
+rund
 Brille
 mit
 dick

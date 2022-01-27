@@ -3,24 +3,24 @@ preprocess:
   script:
     - mkdir -p corpus/UD_German-HDT
     - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-train-merged.conllu corpus/UD_German-HDT/
-      --n-sents 10
+      --n-sents 5
     - mv corpus/UD_German-HDT/de_hdt-ud-train-merged.spacy corpus/UD_German-HDT/train.spacy
     - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-dev.conllu corpus/UD_German-HDT/
-      --n-sents 10
+      --n-sents 5
     - mv corpus/UD_German-HDT/de_hdt-ud-dev.spacy corpus/UD_German-HDT/dev.spacy
     - python -m spacy convert assets/UD_German-HDT/de_hdt-ud-test.conllu corpus/UD_German-HDT/
-      --n-sents 10
+      --n-sents 5
     - mv corpus/UD_German-HDT/de_hdt-ud-test.spacy corpus/UD_German-HDT/test.spacy
   deps:
     - path: assets/UD_German-HDT/
-      md5: 758a48f1f7ab7cb10f35c3e2836661e5
+      md5: 9f38af78998cfb0f4258474dfa8cc3ed
   outs:
     - path: corpus/UD_German-HDT/train.spacy
-      md5: 02d20622015f1c403f878db351677df1
+      md5: 7a99481e10f9a4a5eb59d3b369a129b0
     - path: corpus/UD_German-HDT/dev.spacy
-      md5: 466925b30f8e1d4fc747d73738533955
+      md5: 8124a377d1da047f374c26379a5a41ab
     - path: corpus/UD_German-HDT/test.spacy
-      md5: d26bff92c8ff9d250319c3eb2392114f
+      md5: ce83e56f65b998db346ab5cc01f90506
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
 create-config:
@@ -39,14 +39,14 @@ train:
       --gpu-id -1 --paths.train corpus/UD_German-HDT/train.spacy --paths.dev corpus/UD_German-HDT/dev.spacy
   deps:
     - path: configs/UD_German-HDT/config.cfg
-      md5: 0641982b5be1718258fd30a35e0a2f5a
+      md5: e61b75cb3b95a22456d0faad1bfae51a
     - path: corpus/UD_German-HDT/train.spacy
-      md5: 02d20622015f1c403f878db351677df1
+      md5: 7a99481e10f9a4a5eb59d3b369a129b0
     - path: corpus/UD_German-HDT/dev.spacy
-      md5: 466925b30f8e1d4fc747d73738533955
+      md5: 8124a377d1da047f374c26379a5a41ab
   outs:
     - path: training/UD_German-HDT/model-best
-      md5: f04f11b4d511bf8c5a2932744c2178ae
+      md5: 26bfbf6fb8bc635ea416c89e033b0a3c
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
 evaluate:

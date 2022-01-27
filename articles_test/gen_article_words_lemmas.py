@@ -10,6 +10,8 @@ nlp.add_pipe('experimental_edit_tree_lemmatizer', source=source_nlp)
 
 print(nlp.pipe_names)
 
+# nlp = spacy.load('../training/UD_German-HDT/model-last')
+
 file = open('article.txt')
 text = file.read()
 file.close()
